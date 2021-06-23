@@ -17,7 +17,7 @@ h1 {
     margin-bottom: 5px;
 }
 .header {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .underline {
     width: 100px;
@@ -156,7 +156,10 @@ h3 {
     display: flex;
     width: 100%;
     text-align: left;
-
+    font-size: 16px;
+    overflow:auto;
+    max-height: 250px;
+    
 }
 
 .bg {
@@ -187,4 +190,24 @@ h3 {
     100% {
       transform:translateX(25%);
     }
+  }
+  @media (max-width:1000px) {
+    .modal {
+        width: 90%;
+        height: 90vh;
+        left: 5%;
+        top:5%;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    h3{
+        margin-top: 20px;
+    }
+    .pModal {
+        
+        max-height: 250px;
+        
+    }
+
+
   }
